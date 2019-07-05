@@ -1,0 +1,69 @@
+
+.jumbotronHeaderImg {
+    background-image: url(images/sammyHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.navbar-brand {
+    font-size: 1em;
+}
+
+.card-title {
+       font-weight: 700;
+}
+
+.contactCard {
+    margin-bottom: 15px;
+}
+
+
+body {
+    padding-top: 70PX;
+    font-family: 'Volkhov', serif;
+}
+
+#navbarDropdown {
+    color: #A5DAB2;
+}
+
+.navBar {
+    background-color: #41506B;
+}
+
+
+
+.homePageButton {
+    background-color: transparent;
+    border: 2px solid #41506B;
+    color: black;
+}
+
+.icons {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10px;
+    display:table;
+    margin:0 auto;
+}
+
+.box {
+    padding-bottom: 25px
+}
+
+.btn {
+    display:table;
+    margin:0 auto;
+    background-color: #41506B; 
+}
+
+#fontCredit {
+    font-size: 9px;
+}
