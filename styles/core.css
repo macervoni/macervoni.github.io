@@ -1,5 +1,5 @@
 
-.jumbotronHeaderImg {
+.homeJumbo {
     background-image: url(../images/sammyHeader.jpg);
     background-size: cover;
     background-position: center;
@@ -40,13 +40,6 @@ body {
 }
 
 
-
-.homePageButton {
-    background-color: transparent;
-    border: 2px solid #41506B;
-    color: black;
-}
-
 .icons {
     width: 75px;
     height: 75px;
@@ -59,10 +52,13 @@ body {
     padding-bottom: 25px
 }
 
-.btn {
+.mainNavButtons {
     display:table;
     margin:0 auto;
-    background-color: #41506B; 
+    background-color: transparent; 
+    color: #41506B;
+    border: none;
+    font-size: 1em;
 }
 
 #fontCredit {
