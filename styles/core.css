@@ -12,17 +12,19 @@ h1 {
     font-size: 2.5em;
 }
 
+a {
+    color: cornflowerblue;
+}
+
 
 .navbar-brand {
     font-size: 1em;
 }
 
-.card-title {
-       font-weight: 700;
-}
 
-.contactCard {
-    margin-bottom: 15px;
+.topicBlock em {
+    color: #A5DAB2;
+    font-weight: bold;
 }
 
 
@@ -64,3 +66,43 @@ body {
 #fontCredit {
     font-size: 9px;
 }
+
+/*CRITTER PAGE*/
+
+.listHeader {
+    font-weight: bold;
+}
+
+#petName {
+    font-weight: bold;
+    color: salmon;
+}
+
+/*CONTACT PAGE*/
+.contactCard {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    height: 300px;
+
+}
+
+.contactCardName {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    height: 150px;
+
+}
+
+.contactCard .card-title, .contactCardName .card-title {
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.contactCard .contact-name, .contactCardName .contact-name {
+    text-align: center;
+    color: #41506B;
+    font-weight: 700;
+}
+
+
