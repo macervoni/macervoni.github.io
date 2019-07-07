@@ -1,9 +1,14 @@
-
+/*
 .jumbotronHeaderImg {
     background-image: url(../images/sammyHeader.jpg);
     background-size: cover;
     background-position: center;
     color: white;
+}*/
+
+#content {
+    padding: 25%;
+    text-align: center;
 }
 
 h1 {
@@ -29,6 +34,10 @@ h1 {
 body {
     padding-top: 70PX;
     font-family: 'Volkhov', serif;
+    background-image: url(../images/sammyHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 #navbarDropdown {
