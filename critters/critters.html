@@ -66,6 +66,7 @@
         <!-- collapsable cards witin a Pill navigation  -->
 
         <div class="container">
+            <!-- Navigation Pills -->
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" id="pills-pups-tab" data-toggle="pill" href="#pills-pups" role="tab" aria-controls="pills-pups" aria-selected="true">Pups</a>
@@ -80,23 +81,222 @@
               </li> 
             </ul>
 
+            <!-- Main tab div - inlcudes dog, kitties and fis -->
             <div class="tab-content" id="pills-tabContent">
 
                 <!-- Pups Tab -->
-              <div class="tab-pane fade show active" id="pills-pups" role="tabpanel" aria-labelledby="pills-pups-tab">
+
+                <div class="tab-pane fade show active" id="pills-pups" role="tabpanel" aria-labelledby="pills-pups-tab">
+
+                    <!-- Pups only content within tab -->
+                    <!-- Beginning of accordion cards within each tab section-->
+
+                    <div id="accordion">
+
+                        <!--Feeding & Treats Accordion Bar -->
+                      <div class="card">
+                        <div class="card-header" id="feedingAndTreats">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Feeding & Treats
+                            </button>
+                          </h5>
+                        </div>
+
+                        <!-- Feeding and Treats Content Section -->
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="feedingAndTreats" data-parent="#accordion">
+                          <div class="card-body">
+                            Feeding & Treats content
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Walks and Off-Leash Runs Bar -->
+                      <div class="card">
+                        <div class="card-header" id="walksAndOffLeashRuns">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Walks & Off-Leash Runs
+                            </button>
+                          </h5>
+                        </div>
+
+                        <!-- Walks and Off-Leash Content Section -->
+                        <div id="collapseTwo" class="collapse" aria-labelledby="walksAndOffLeashRuns" data-parent="#accordion">
+                          <div class="card-body">
+                            Walks and Off Leash Content
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="card">
+                        <div class="card-header" id="leavingTheApartment">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Leaving the Apartment
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="leavingTheApartment" data-parent="#accordion">
+                          <div class="card-body">
+                            Leaving hte Apartment content
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="bedtime">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Bedtime
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="bedtime" data-parent="#accordion">
+                          <div class="card-body">
+                            Bedtime content
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="commands">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              Commands
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="commands" data-parent="#accordion">
+                          <div class="card-body">
+                            Commands content
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="bruceInstructions">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              Special Bruce Instructions
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseSix" class="collapse" aria-labelledby="bruceInstructions" data-parent="#accordion">
+                          <div class="card-body">
+                            Special Bruce Instructions content
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="baths">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              Baths (if needed)
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseSeven" class="collapse" aria-labelledby="baths" data-parent="#accordion">
+                          <div class="card-body">
+                            Baths (if needed) content
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- pups accordion div -->
+                    </div>
+
+                <!--Close Pups Tab on content -->
+                </div> 
+
+
+
+                <!-- Kitties Tab -->
+
+                <div class="tab-pane fade" id="pills-kitties" role="tabpanel" aria-labelledby="pills-kitties-tab">
+                    
+                    <div id="accordion">
+
+                        <!--Feeding & Treats Accordion Bar -->
+                      <div class="card">
+                        <div class="card-header" id="feedingAndTreats">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Kitties Feeding & Treats
+                            </button>
+                          </h5>
+                        </div>
+
+                        <!-- Feeding and Treats Content Section -->
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="feedingAndTreats" data-parent="#accordion">
+                          <div class="card-body">
+                            Kitties Feeding & Treats content
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+
+                <!-- Fish Tab -->
+
+                <div class="tab-pane fade" id="pills-fish" role="tabpanel" aria-labelledby="pills-fish-tab">
+                    <div id="accordion">
+
+                        <!--Feeding & Treats Accordion Bar -->
+                      <div class="card">
+                        <div class="card-header" id="feedingAndTreats">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Fish Feeding & Treats
+                            </button>
+                          </h5>
+                        </div>
+
+                        <!-- Feeding and Treats Content Section -->
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="feedingAndTreats" data-parent="#accordion">
+                          <div class="card-body">
+                            Fish Feeding & Treats content
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+
+            <!-- Close set of pups, kitties and fish tabs -->
+            </div>   
+
+
+
+
+
+
+
                     <div id="accordion">
                         <div class="card">
-                          <div class="card-header" id="headingOne pups">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Feeding & Treats
-                              </button>
-                            </h5>
-                          </div>
+                            <div class="card-header" id="headingOne pups">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Feeding & Treats
+                                  </button>
+                                </h5>
+                            </div>
 
-                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
-                                  <h5 id="feedingAndTreats">Feeding</h5>
+                                  <h5>Feeding</h5>
                                   <ul>
                                       <li class="listHeader">Misc</li>
                                           <ul>
@@ -148,7 +348,7 @@
 
                                                   </ul>
                                           </ul>
-                               </div>
+                               
                                    <h5 id="feedingAndTreats">Treats</h5>
                                    <ul>
                                        <li class="listHeader">Treat Storage</li>
@@ -167,8 +367,9 @@
                                            </ul>
                                            <br>
                             </div>
-                          </div>
-                        </div>
+                        </div>                          
+                    </div>
+
 
                         <div class="card">
                           <div class="card-header" id="headingTwo">
