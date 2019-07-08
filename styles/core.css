@@ -1,9 +1,11 @@
 
 .homeJumbo {
-    background-image: url(../images/sammyHeader.jpg);
+/*    background-image: url(../images/sammyHeader2.jpg);*/
+    background-color: black;
     background-size: cover;
     background-position: center;
     color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
 }
 
 h1 {
@@ -22,10 +24,7 @@ a {
 }
 
 
-.topicBlock em {
-    color: #A5DAB2;
-    font-weight: bold;
-}
+
 
 
 body {
@@ -63,19 +62,38 @@ body {
     font-size: 1em;
 }
 
-#fontCredit {
-    font-size: 9px;
-}
+
 
 /*CRITTER PAGE*/
+
+.nav-pills {
+    padding-bottom: 3%;
+}
+
+.tab-content h3 {
+    font-size: 1.25em;
+}
 
 .listHeader {
     font-weight: bold;
 }
 
-#petName {
+.card-body em {
+    color: #A5DAB2;
+    font-weight: bold;
+}
+
+.petName {
     font-weight: bold;
     color: salmon;
+}
+
+.card-header .btn {
+    color: white;
+}
+
+.card-header {
+    background: #41506B;
 }
 
 /*CONTACT PAGE*/
@@ -83,7 +101,10 @@ body {
     margin-bottom: 15px;
     margin-top: 20px;
     height: 300px;
+}
 
+.personalPhone{
+    text-align: center;
 }
 
 .contactCardName {
@@ -104,5 +125,13 @@ body {
     color: #41506B;
     font-weight: 700;
 }
+
+/*footer*/
+#fontCredit {
+    margin-top: 20px;
+    font-size: 9px;
+}
+
+
 
 

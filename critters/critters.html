@@ -59,74 +59,304 @@
 
         <div class="jumbotron critterJumbo">
           <h1 class="display-5">The Critters</h1>
-          <p class="lead">THe Gang: Sammy, Tootles, Babs, Penny and Bruce</p>
+          <p class="lead">THe Gang: Sammy, Tootles, Babs, Penny, Bruce and Hans</p>
         </div>
+
+
+        <!-- collapsable cards witin a Pill navigation  -->
 
         <div class="container">
-            <h2>Topics</h2>
-            <p><a href="#feedingAndTreats">Feeding & Treats</a></p>
-            <p><a href="">Walks and Exercice</a></p>
-            <p><a href="">Commands</a></p>
-            <p><a href="">Bedtime</a></p>
-            <p><a href="">Baths</a></p>
-            <p><a href="">Special Bruce Instruciton</a></p>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-pups-tab" data-toggle="pill" href="#pills-pups" role="tab" aria-controls="pills-pups" aria-selected="true">Pups</a>
+              </li>
 
-            <hr>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-kitties-tab" data-toggle="pill" href="#pills-kitties" role="tab" aria-controls="pills-kitties" aria-selected="false">Kitties</a>
+              </li>
 
-            <div class="topicBlock">
-                <h5 id="feedingAndTreats">Feeding & Treats</h5>
-                <ul>
-                    <li class="listHeader">Food Storage</li>
-                        <ul>
-                            <li>Located in hallway closet</li>
-                            <li>White pastic bin on bottom left</li>
-                            <li>Metal sccoper inside bowl</li>
-                        </ul>
-                        <br>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-fish-tab" data-toggle="pill" href="#pills-fish" role="tab" aria-controls="pills-fish" aria-selected="false">Fish</a>
+              </li> 
+            </ul>
 
-                    <li class="listHeader">Serving Size</li>
-                        <ul>
-                            <li>Bruce: 1 heaping scoop in <em>green plastic bowl</em></li>
-                            <li>Penny: 1 heaping scoop in <em>silver metal bowl</em></li>
-                        </ul>
-                        <br>
+            <div class="tab-content" id="pills-tabContent">
 
-                    <li class="listHeader">The Ritual</li>
-                        <ul>
-                            <li id="petName">Penny:</li>
-                                <ul>
-                                    <li>Give her the BED command and lead her to the green dog bed</li>
-                                    <li>Place her bowl on the bed</li>
-                                    <li>If she doesn't eat after about 10 minutes:</li>
-                                        <ul>
-                                            <li>Add a littl cold water, mix and sit for a minute</li>
-                                            <li>Still no dice? Add soem peanut butter</li>
-                                            <li>Nothing? Place in the fridge until next feeding</li>
-                                            <li><em>Note: </em> It's ok if Penny skips a single meal. If she's skipping two or more - call the vet and gives us a shout (<a href="../contacts/contacts.html">contact page</a>)
-                                        </ul>
-                                </ul>
-                        </ul>
+                <!-- Pups Tab -->
+              <div class="tab-pane fade show active" id="pills-pups" role="tabpanel" aria-labelledby="pills-pups-tab">
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne pups">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Feeding & Treats
+                              </button>
+                            </h5>
+                          </div>
 
-                    
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                  <h5 id="feedingAndTreats">Feeding</h5>
+                                  <ul>
+                                      <li class="listHeader">Misc</li>
+                                          <ul>
+                                              <li>Wait 20-30 minutes to feed after a big running outside</li><br>
+                                              <li>Feed around 7-8 in the AM and PM</li><br>
+                                              <li>Give yourself time to be present for the feedings in the morning</li><br>
+                                          </ul>
+                                  </ul>
+                                  <ul>
+                                      <li class="listHeader">Food Storage</li>
+                                          <ul>
+                                              <li>Located in hallway closet</li>
+                                              <li>White pastic bin on bottom left</li>
+                                              <li>Metal sccoper inside bowl</li>
+                                          </ul>
+                                          <br>
+
+                                      <li class="listHeader">Serving Size</li>
+                                          <ul>
+                                              <li><span class="petName">Bruce:</span> 1 heaping scoop in <em>green plastic bowl</em></li>
+                                              <li><span class="petName">Penny:</span> 1 heaping scoop in <em>silver metal bowl</em></li>
+                                          </ul>
+                                          <br>
+
+                                      <li class="listHeader">The Ritual</li>
+                                      <br>
+                                          <ul>
+                                              <li class="petName">Penny:</li>
+                                                  <ul>
+                                                      <li>Give her the BED command and lead her to the green dog bed</li><br>
+                                                      <li>Place her bowl on the bed</li><br>
+                                                      <li>If she doesn't eat after about 10 minutes:</li>
+                                                          <ul>
+                                                              <li>Add a littl cold water, mix and sit for a minute</li><br>
+                                                              <li>Still no dice? Add some peanut butter</li><br>
+                                                              <li>Nothing? Place in the fridge until next feeding</li><br>
+                                                              <li><em>Note: </em> It's ok if Penny skips a single meal. If she's skipping two or more - give us a shout. If we can't be reached, schedule a vet visit (<a href="../contacts/contacts.html">contact page</a>)
+                                                          </ul>
+                                                  </ul>
+                                          </ul>
+                                          <br>
+                                          <ul>
+                                              <li class="petName">Bruce:</li>
+                                                  <ul>
+                                                      <li>Give him the CRATE command and lead him to the crate</li><br>
+                                                      <li>Place the bowl in the crate</li><br>
+                                                      <li>Remove bowl as soon as he's done eating</li><br>
+                                                      <li>Keep him in crate until Penny has finished eating</li><br>
+
+                                                  </ul>
+                                          </ul>
+                               </div>
+                                   <h5 id="feedingAndTreats">Treats</h5>
+                                   <ul>
+                                       <li class="listHeader">Treat Storage</li>
+                                           <ul>
+                                               <li><em>Everyday treats</em> in glass jar on kitchen dolly </li>
+                                               <ul>
+                                                   <li>2-3 per day</li>
+                                               </ul>
+                                               <br>
+                                               <li>Assortment of treats in basket in cabinet above stove:</li>
+                                               <ul> 
+                                                  <li><em>Dental Treat:</em> 1 per day</li>  
+                                                  <li><em>Rawhide chews:</em> 1 per day</li>  
+                                               </ul>
+                                              
+                                           </ul>
+                                           <br>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Walks and Off-Leash Runs
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                  <h5 id="feedingAndTreats">Walks and Off-Leash Runs</h5>
+                                  <ul>
+                                      <li class="listHeader">Misc.</li>
+                                          <ul>
+                                              <li>Dog's should be walked at minimum 3x per day</li><br>
+                                              <li>One of the daily walks should be an off-leash romping at the park</li><br>
+                                              <li>Walks should be 20-30 minutes minimum</li><br>
+                                              <li>Off-leash runs can be 45 min to 1 hr if not too hot</li><br>
+                                              <li>MUST bring water and collapsable bowl on hot days for off-leash rompings</li>
+                                          </ul>  
+                                          <br> 
+                                      <li class="listHeader">Equipment Check</li>  
+                                          <ul>
+                                              <li>Collars</li>
+                                              <li>Leashes</li>
+                                              <li>Poop Bags</li>
+                                              <li>Apartment Keys</li>
+                                              <li>Tennis ball launcher (for off-leash time)</li>
+                                              <li>Water bottle and collapsable bowl (for off-leash time)</li>
+                                          </ul>
+                                          <br>
+                                      <li class="listHeader">Basic Walks</li>
+                                          <ul>
+                                              <li>20-30 minute walks around the neighborhood</li><br>
+                                              <li>Best is to head south down Van Brunt and explore side streets on the east side</li><br>
+                                              <li>Walking around the block and through the park is also a nice path</li><br>
+                                                  <ul>
+                                                      <li id="petName">Bruce:</li>
+                                                          <ul>
+                                                              <li>Bruce will likely go to the bathroom immediately</li><br>
+                                                              <li>He responds well to HEAL command while walking</li><br>
+                                                          </ul><br>
+                                                      <li id="petName">Penny:</li>
+                                                          <ul>
+                                                              <li>Penny will likley NOT go to the bathroom right away and will need more walking around time</li><br>
+                                                              <li>Penny may go the entire walk and not go to the bathroom, but she'll usually at least pee</li><br>
+                                                              <li>Penny will almost always go #1 and #2 at the park - even if on the leash. This is your go to if you're having issues</li><br>
+                                                          </ul>
+                                                  </ul>
+                                          </ul>
+                                      <li class="listHeader">Off-Leash Runs:</li>
+                                          <ul>
+                                              <li><a href="https://g.page/coffey-park?share" target="_blank">Coffee Park</a> Is an off-leash during specic hours of the day and is one block from the apartment. Go and go often!</li>
+                                                  <ul>
+                                                      <li>6:00AM - 9:00AM</li>
+                                                      <li>9:00PM - 1:00AM</li><br>
+                                                  </ul>
+                                              <li>The larger areas of grass on the left side of the park are ideal</li><br>
+                                              <li>Keep an eye on them at all times and don't hesitate to call them (assertively) to you if they are:</li>
+                                                  <ul>
+                                                      <li>Wandering too close near the exits of the park</li>
+                                                      <li>Chasing after other dogs (or wanting to say hi to humans) all the way across the park</li><br>
+                                                  </ul>
+                                              <li>Penny and Bruce love to chase eachother. Don't be alarmed at their barking and nipping. As long as their tails are up and waging, all is good</li><br>
+                                              <li>Penny loves to play fetch with the tennis launcher. Bruce not so much</li><br>
+                                              <li>Bring water/bowl and encourage drink breaks</li><br>
+                                              <li>Use COME command and call names to bring them in</li><br>
+                                              <li>Another great park option is <a href="https://g.page/valentino-pier?share">Valention Jr. Pier Park.</a> Located south west of the apartment, it's about a 10-15 minute walk and away from any main roads (and near the water). Highly recommend going to this park on a weekend morning.</li><br>
+                                          </ul>
+                                      <li class="listHeader">Dog Park Watchouts</li>
+                                          <ul>
+                                              <li>Bruce and Penny are very friendly, but not every other dog is. If you ever feel like other dogs or Penny and Bruce are being too aggressive durring play, calmly walk over, clap loudly over the dogs, leash up and leave.</li><br>
+                                              <li>Coffee Park is nice, but the grass is often let to grow longer than it should and BBQs on the weekend leave hidden treasures. Keep an eye out for the dogs sniffing and eating discarded food</li><br>
+                                          </ul>
+                            </div>
+                          </div>
+                        </div>
+
+
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Leaving the Apartment
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Bed Time
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Commands
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Special Bruce Instructions
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingSeven">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Baths (if needed)
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>  
+                    </div>
+
+              <!-- Kitties Tab -->
+              <div class="tab-pane fade" id="pills-kitties" role="tabpanel" aria-labelledby="pills-kitties-tab">
+                  <h2>Kitties Test</h2>
+              </div>
+
+              <!-- Fish Tab -->
+              <div class="tab-pane fade" id="pills-fish" role="tabpanel" aria-labelledby="pills-fish-tab">
+                  <h2>Fish Test</h2>
+              </div>
             </div>
 
+
+    <!-- container div  -->
         </div>
 
 
-      </div>
-        <div id="fontCredit">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    </div>
+
+
+                <!-- collapsable cards -->
+          
 
 
 
 
-
-
-<!--     <div class="container">
-        <div class="jumbotron jumbotronHeaderImg">
-            <h1>Cervoni Critters</h1>
+        <div class="container">
+                <div id="fontCredit">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         </div>
-    </div> -->
+        
+    
+
+
+
 
 
     <!-- Optional JavaScript -->
