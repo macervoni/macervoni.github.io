@@ -96,6 +96,10 @@ body {
     background: #41506B;
 }
 
+.warning {
+    color: red;
+}
+
 /*CONTACT PAGE*/
 .contactCard {
     margin-bottom: 15px;
