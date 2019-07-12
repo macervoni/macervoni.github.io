@@ -141,5 +141,25 @@ body {
 }
 
 
+/*Critter Carausel Images*/
+
+.critterImageName {
+    font-weight: 700;
+    font-size: 2rem;
+     text-shadow: black 0.2em 0.2em 0.2em;
+
+}
+
+.critterImageNameSub {
+    font-weight: 700;
+    font-size: 1rem;
+     text-shadow: black 0.2em 0.2em 0.2em;
+
+}
+
+.d-block {
+
+    margin-bottom: 5%;
+}
 
 
